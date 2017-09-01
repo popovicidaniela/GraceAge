@@ -1,0 +1,170 @@
+html {
+    overflow: hidden;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+
+#questionnairy_content{
+   width:100%;
+}
+
+#tips_panel>.row{
+    width:100%;
+    border-bottom: 3px solid;
+    border-color: #CDDC39;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+#tips_panel{
+    font-family: "Open Sans";
+    color:#405250;
+    background-color: #F0F4C3;
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 0px;
+    padding-top: 10px;
+    overflow-y: hidden;
+    white-space: normal !important;
+    
+}
+main{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#rewards_bought_text{
+   color:#405250;
+   position:relative;
+   font-size:40px;
+   margin-left:15px;
+   width:100%;
+}
+
+#frame{
+    margin-bottom:0px;
+}
+.list-group-item:last-child{
+    border-bottom:none;
+}
+
+.list-group-item{
+    color:#405250;
+    padding-left:15px;
+    background-color: #F0F4C3;
+    border:none;
+    border-bottom:1px solid;
+    border-color:#CDDC39;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    font-size:10px;
+    }
+
+.list-group-item>span{
+    position: relative;
+    font-size: 25px;    
+}
+
+
+
+footer{
+    border-top: 4px solid;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    margin-top: 50px;
+    line-height: 50px;
+    height: 15vh !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-arrow-right,
+.btn-arrow-left {
+    
+    color: white;
+    height: 60px;
+    position: relative;
+    padding-top:0px;
+    background-color: #009688;
+    margin-top: 2.5vh;
+    font-family: 'Open Sans';       
+    font-size: 15px;
+    padding-bottom: 0px;
+
+    text-transform: uppercase;
+}
+
+i{
+    color:#009688;
+}
+
+.btn-arrow-left:hover,
+.btn-arrow-left:active,
+.btn-arrow-right:hover,
+.btn-arrow-right:active {
+    background-color: #009688;
+    color:#CDDC39;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after { /* make two squares (before and after), looking similar to the button */
+    content:"";
+    position: absolute;
+    top: 8px; /* move it down because of rounded corners */
+    width: 42px; /* same as height */
+    height: 42px; /* button_outer_height / sqrt(2) */
+    background: #009688; /* use parent background */
+    border: #009688; /* use parent border */
+    z-index: -1; 
+    border-left-color: transparent; /* hide left border */
+    border-bottom-color: transparent; /* hide bottom border */
+    border-radius: 0px 4px 0px 0px; /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+.btn-arrow-right:after {
+    transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.btn-arrow-left:before{
+    transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+.btn-arrow-left:after,
+.btn-arrow-right:before{ /* align the "after" square to the right */
+    display: none;
+} 
+
+.btn-arrow-left:before { /* align the "before" square to the left */
+    left: -20px;
+}
+.btn-arrow-right:after{ /* align the "after" square to the right */
+    right: -20px;
+}
+
+.col-sm-4{
+    padding: 0px;
+    margin: 0px;
+}
+#previous_navbutton{
+  padding-left:55px;
+}
+#next_navbutton{
+  padding-right:60px;
+}
+
+

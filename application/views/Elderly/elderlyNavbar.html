@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    
+            <nav id="entireNavbar" class="navbar navbar-inverse navbar-default">
+                <div class="row">
+                <div id='navbar_icons' class="col-sm-offset-1 col-sm-1">
+                    <ul class="nav navbar-nav">
+                        {menu_items}
+                        <li id="{id}"><a href="{link}" title="{title}" class="{className}">
+                                <i class="{iconName}" aria-hidden="true"></i><br><span class="fontfamily">{name}</span></a></li>
+                        {/menu_items}
+                    </ul>
+                </div>
+                    
+                
+
+                    <div class="col-sm-offset-2 col-sm-8">
+                        {help_text}
+                        <p id="{id}" style="display:none">
+                            {text}
+                        </p>
+                        {/help_text}
+                    </div>
+                    <div class="col-sm-1">
+                </div>
+                    {help_item}
+                    <div id="Help_icon" class="col-sm-offset-10 col-sm-1">
+                    <div id='{id}'>
+                    <a onclick="{func}" title="{title}" class="{className}">
+                                <i class="{iconName}" aria-hidden="true"></i><br><span class="fontfamily">{name}</span></a>
+                                </div>
+                    </div>
+                    {/help_item}
+                    </div>
+            </nav>
+    </div>

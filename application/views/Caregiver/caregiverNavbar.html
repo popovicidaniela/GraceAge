@@ -1,0 +1,46 @@
+<div class="container-fluid"> 
+    <nav class="navbar navbar-inverse navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- for mobile version -->
+            <ul id="logouttab" class="dropdown pull-right">
+                <li>
+                    <a href="../AccountController/logout" >
+                        <i class="fa fa-sign-out fa-2x" > </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- end mobile version -->
+
+        </div>    
+
+        <div id="navbar" class="collapse navbar-collapse row">
+            <ul class="nav navbar-nav">
+                {caregiver_menu_items}
+                <li><a {showID} href="{link}" title="{title}" class="{className} {gridClass}">{text}</a></li>
+                {/caregiver_menu_items}
+            </ul>
+
+            <ul class="dropdown pull-right">
+                <li class = "{profile_class}">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <i class="fa fa-user" ></i>
+                        <span class="fontfamily">{profile}<b class="caret"> </b></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {caregiver_profile_items}
+                        <li><a href="{link}" title="{title}" class="{className}">{name}</a></li>
+                        {/caregiver_profile_items}
+                    </ul>
+                </li>
+            </ul>
+
+        </div>    
+    </nav>
+</div>

@@ -1,0 +1,382 @@
+html {
+    overflow: hidden; /*static page*/
+    font-family: "Open Sans";
+}
+
+.col-sm-12,
+.col-sm-4,
+.col-xs-12,
+.col-xs-9,
+.col-xs-8,
+.col-xs-5,
+.col-xs-4,
+.col-xs-3,
+.col-xs-2, 
+.col-xs-1{
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-sm-10{
+    padding-right: 15px !important;
+}
+
+#pageTitle{  
+    margin-top: 3%;
+    overflow: hidden;
+    padding: 8px;
+    background-color: #CDDC39;
+    width: 100%;   
+    font-family: "Open Sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: #212121;  
+    border-top-left-radius: 4px; 
+    border-top-right-radius: 4px;
+    cursor: default;
+}
+
+#tabsheader{
+    margin-top: 3%;
+    margin-bottom: -3px;
+    height: 42px;
+    overflow: hidden;
+    padding: 0px;
+    background-color: #CDDC39;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: #212121;  
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-bottom: 0px;
+    border-top-left-radius: 4px; 
+    border-top-right-radius: 4px;
+    cursor: default;
+}
+
+#mobileversion{
+    display: none;
+}
+
+/* styling tabs in rewards page*/
+.tabs{  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px !important;
+}
+    .tabs li{
+        list-style-type: none;
+        float: left;
+        text-align: center;
+        color: #212121;
+    }
+
+    .tabs li a{
+        display:block;
+        background-color: #CDDC39;
+        width: 100%;
+        height: 100%;
+        padding-top: 8px;
+        padding-bottom: 0px;
+        color: #212121;
+        text-decoration: none;
+    }
+
+        .tabs li a:hover{
+            text-decoration: none;
+            color: #212121;
+            background-color: #CDDC39;
+        }
+
+        .tabs>li.active>a{
+            background-color: white;
+            font-weight: bold;
+        }
+
+.frame{
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    background-color: white;
+    padding: 0px;
+}
+
+.tab-content{
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-top: 0px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    background-color: white;
+    padding: 0px;
+}
+
+/* styling button: same everywhere*/
+.btn,
+.btn:hover,
+.btn:active,
+.btn:target {
+    height: 34px;
+    min-width: 70px;
+    background-color: #CDDC39;
+    border: 1px solid #CDDC39;
+    border-radius: 4px;    
+    text-transform: uppercase;
+    font-weight: bold; 
+    padding: 6px 12px;
+    font-family: "Open Sans";
+    color: #212121;
+}
+
+.btn.btn-default.inactive {
+    display: none;
+}
+
+.btn.save,
+.btn.save:hover,
+.btn.save:active,
+.btn.save:target{
+    margin-top: 8px;
+    margin-right: -2px;
+    height: 34px;
+    min-width: 70px;
+    float: right;
+}
+
+#add_tip_button,
+#add_reward_button{
+    margin-left: 6px;
+    margin-right: 6px;
+    float: right;
+}
+
+.delete{
+    float: right;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
+/* when delete and edit can't be on the same line*/
+@media only screen and (max-width: 831px){
+    .edit{
+        float: right;
+        margin-right: 0px !important;
+    }
+}
+
+/* when delete and edit are in the same line under the text */
+@media only screen and (max-width: 767px){
+    .delete{
+        float: none;
+    }
+    
+    .edit{
+        float: none;
+    }
+}
+
+/* dropdown */
+select{
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    min-width: 136px !important;
+    height: 34px;
+    margin-bottom: 5px;
+    padding-left: 5%; padding-right: 3%;
+    cursor: pointer;
+}
+
+#select_language {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#select_topic {
+    width: 25%;
+}
+
+/* input fields */
+#new_tip, #newtext, #new_reward, #price{
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Open Sans";
+}
+
+#new_reward, #newtext, #new_tip{
+    width: 100%;
+    min-width: 160px;
+}
+#newtext{
+    margin-top:1vh;
+    margin-bottom:0.5vh;
+    margin-left: 6px;
+    width: 100%;
+}
+
+#price{
+    width: 100%;
+}
+
+/*check boxes */
+.available{
+   float: right; 
+   margin-right: 23px !important;
+}
+
+#tips_list, #rewards_list{
+    list-style-type: none !important;
+    padding-left: 12px;
+    margin-top: 10px; margin-bottom: 10px;
+    font-family: "Open Sans";
+}
+
+.tipsstring{
+    margin-right: 6px;
+    margin-left: 18px;
+}
+
+#tips_list{
+    padding-left:0px;
+}
+
+#tips_list li{
+    cursor: default;   
+}
+
+#rewardForm, #tipForm{
+    margin-bottom: 50px;
+}
+
+/* line under each row */
+#rewards_list div.row,
+#tips_list div.row{
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    margin-top: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+/* line under each row*/
+.bought_rewards_list div.row{
+    border-bottom: 1px solid;
+    border-color: #ddd;
+    margin-top: 9px;
+    
+    margin-left: 3px;
+    margin-right: -6px;
+}
+
+.reward_price{
+    padding-left: 18px;
+    cursor: default;
+}
+
+.reward_name{
+    cursor: default;
+}
+
+.edit, .delete{
+    cursor: pointer;
+}
+
+div.titles {
+    font-weight: 600;
+    
+    border-bottom: 1px solid;
+    border-color: #212121;
+    margin-top: 9px;
+    margin-left: 3px;
+    margin-right: -6px;
+}
+
+.alignright{
+    text-align: right;
+}
+
+hr {
+    margin-top: 2px;
+}
+
+.scrollbox{
+    overflow-style: auto;
+    overflow-y: scroll;
+    height: 80vh;
+    padding-left: 5vw; padding-right: 5vw;
+    padding-bottom: 1.5%; padding-top: 1.5%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+}
+
+/* mobile version with navbar collapse*/
+@media only screen and (max-width: 767px){
+
+    html{
+        overflow: auto; /* scroll is possible */
+    }
+    
+    #pageTitle{
+        margin-top: 0px;
+    }
+    
+    #mobileversion{
+        display: block;
+    }
+    
+    .tabbox{
+        display: none;
+    }
+    
+    #mobileversion>.row{
+        margin: 0;
+    }
+    
+    .col-sm-10{
+        padding-right: 0px !important;
+    }
+    
+    .frame{
+        padding-left: 12px;
+        padding-right: 12px;
+        height: 84vh;
+    }
+    
+    .available{
+        float: right; 
+        margin-right: 9px !important;
+    }  
+}
+
+
+
+

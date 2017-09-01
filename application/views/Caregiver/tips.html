@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div id="pageTitle">
+                TIPS
+            </div>
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div class="frame">
+                <div class="scrollbox">                  
+
+                    <div class ="row">
+                        <div class="col-sm-10">   
+                            <div class="form-group">
+                                <select id="select_topic" class="form-control" onchange="register_topic()">
+                                    <option value="0"> {choose_option}</option>
+                                    {options}
+                                    <option value="{Topic}">{Topic}</option>
+                                    {/options}
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form id="tipForm">
+                                <div class="col-sm-8"><input type="text" id="new_tip" placeholder="{write_new_tip}"></div>
+                                <div class="col-sm-2"><div class="form-group"><select id="select_language" class="form-control"><option value="dutch">Nederlands</option><option value="english">English</option></select></div></div>
+                                <div class="col-sm-2"><input type="button" class="btn btn-default" id="add_tip_button" onclick="add_new_tip()" value="{add_new_tip}"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class ="col-sm-12">
+                            <ul id="tips_list"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class ="col-sm-12">
+                            <button class="btn btn-default inactive" id="undo" onclick="undo()">{tip_undo}</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="snackbar"></div>

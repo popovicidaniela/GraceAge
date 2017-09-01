@@ -1,0 +1,142 @@
+<div class="container-fluid">
+ 
+    <div class ="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <!-- begin desktop / tablet version -->
+            <div class="tabbox">
+                <div id="tabsheader">
+                    <ul class="tabs">
+                        <li class = "active" style="width:50%;"><a data-toggle="tab" href="#boughtRewardsTabContent">{bought_rewards}</a></li>
+                        <li style="width:50%;"><a data-toggle="tab" href="#rewardsListTabContent">{rewards_list}</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-content"> 
+
+                    <div id="rewardsListTabContent" class="tab-pane fade">
+                        <div class="scrollbox">
+                            <div class="row">
+                                <form name="rewardForm" id="rewardForm" action="rewardPost" method="post">
+                                    <div class="col-sm-6"><input type="text" id="new_reward" name="new_reward" placeholder="{write_new_reward}"></div>
+                                    <div class="col-sm-2"><select name="language">
+                                            <option class="language" value="dutch">Nederlands</option>
+                                            <option class="language" value="english">English</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2"><input type="text" id="price" name="price" placeholder="{price}"></div>
+                                    <div class="col-sm-2"><input type="submit" id="add_reward_button" class="btn btn-default fontfamily"  value="{add_new_reward}"></div>
+                                </form>
+                            </div>
+
+
+                            <div class="row titles">
+                                <div class="col-xs-8">{reward}</div>
+                                <div class="col-xs-2">{value} </div>
+                                <div class="col-xs-2 alignright">{available}</div>
+                            </div>
+
+                            <div class ="row">
+
+                                <ul id="rewards_list">
+                                    {allrewards}
+                                    <li>
+                                        <form action="editReward" method="post">
+                                            <div class ="row">
+                                                <div class="col-xs-8 reward_name">{Reward}</div>
+                                                <div class="col-xs-2 reward_price">{Price}</div>
+                                                <div class="col-xs-2">
+                                                    <input onchange="submitChange('{Reward}', this)" type="checkbox" name="available" class="available" {Available} />
+                                                </div>
+                                                <input type='hidden' class='Reward' name='Reward' value='{Reward}'/>
+                                                <br>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    {/allrewards}
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="boughtRewardsTabContent" class="tabContent tab-pane fade in active">
+                        <div class="scrollbox">
+                            <!-- titles -->
+                            <div class="row titles">
+                                <div class="col-xs-4">{name}</div>
+                                <div class="col-xs-4">{reward} </div>
+                                <div class="col-xs-2">{date}</div>
+                                <div class="col-xs-2 alignright">{received}</div>
+                            </div>
+                            <!-- list -->
+                            <div class="bought_rewards_list">
+                                {boughtRewards}
+                                <div class="row">
+                                    <form action="editReward" method="post">
+                                        <div class="col-xs-4">{Name}</div>
+                                        <div class="col-xs-4">{Reward}</div>
+                                        <div class="col-xs-2">{Date}</div>
+
+                                        <div class="col-xs-2">
+                                            <input onchange="submitRecievedChange('{Id}', this)" type="checkbox" name="available" class="available" {Recieved} />
+                                        </div>
+                                        <input type='hidden' class='Reward' name='Reward' value='{Reward}'/>
+                                    </form>
+                                </div>
+                                {/boughtRewards}
+                            </div>  
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- end desktop/tablet version -->
+
+            <!-- begin mobile version -->
+            <div id="mobileversion">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="pageTitle">
+                            REWARDS
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="frame">
+
+                            <!-- titles -->
+                            <div class="row titles">
+                                <div class="col-xs-5">{name}</div>
+                                <div class="col-xs-5">{reward} </div>
+                                <div class="col-xs-2"></div>
+                            </div>
+                            <!-- list -->
+                            <div class="bought_rewards_list">
+                                <div class="row">
+                                    <div class="col-xs-5">Axel Rose</div>
+                                    <div class="col-xs-5">headstart in the bingo</div>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" class="available"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-5">Baron Richard</div>
+                                    <div class="col-xs-5">Lekker dessert</div>
+                                    <div class="col-xs-2">
+                                        <input type="checkbox" class="boughtrewards available"/>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end mobile version -->
+
+        </div>
+    </div>
+</div>
+<div id="snackbar">{reward_added}</div>

@@ -1,0 +1,68 @@
+<div class ="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div id="pageTitle">
+                {Person_Name}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div class="frame">
+                <div id="scrollbox">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td class="nocursor">{name}</td>
+                                <td class="nocursor">{Person_Name}</td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{date_of_birth}</td>
+                                <td class="nocursor">{Birthday}</td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{gender}</td>
+                                <td class="nocursor">{Gender}</td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{home_address}</td>
+                                <td><input type="text" id= "home_address" name="home_address" class="form-control fonttype" placeholder="{HomeAddress}" required></td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{email}</td>
+                                <td><input type="text" id= "email" name="email" class="form-control fonttype" placeholder="{Email}" required></td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{mobile}</td>
+                                <td><input type="text" id= "mobile" name="mobile" class="form-control fonttype" placeholder="{Mobile}" required></td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{language}</td>
+                                <td class="form-group">
+                                    <select class="form-control" name="language" id="language">
+                                        <option value="dutch" {checked_dutch}>Nederlands</option>
+                                        <option value="english" {checked_english} >English</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="nocursor">{change_password}</td>                            
+                                <td id ="passwordRow" class="form-group">
+                                    <input type="password" id= "old" name="old_password" class="form-control fonttype" placeholder="{old_placeholder}" required>
+                                    <input type="password" id= "new" name="new_password" class="form-control fonttype" placeholder="{new_placeholder}" required>
+                                    <input type="password" id= "conf" name="conf_password" class="form-control fonttype" placeholder="{conf_placeholder}" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div id="buttonSubmit">
+                        <button class="btn btn-default" value="Save" onclick="post_caregiver()">{save}</button>
+                        <div id="errorbox" class="alert alert-success inactive"></div>
+                        <div id="snackbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

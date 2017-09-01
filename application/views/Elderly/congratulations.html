@@ -1,0 +1,34 @@
+<?php
+if ($this->session->userType != "Patient"){ //check if logged in as a patient
+die("Please login");
+}
+?>
+<div id='content_wrapper' class="container">
+    <div class="background"></div>
+    <div class="row">
+        <div class="col-xs-1">
+        </div>
+        <div class="col-xs-10">
+            <div id="content">
+                <h1 id="congrats_message"><b>{congrats_message}</b></h1> </br>
+                <h2 id="score_message">{your_score_is} {score}<i id="starIcon" class="fa fa-star fa-1x"></i> </h2> </br>
+                <h2 id="exchange_message">{these_can_be_exchanged}</h2>
+            </div>
+        </div>
+        <div class="col-xs-1">
+        </div>
+    </div>    
+
+    <footer>
+        <div class="row">
+            <div class="col-xs-offset-6 col-xs-5" id="next_navbutton">
+                <div id="buttonnext">
+                    <a href="questionnaire" style="text-decoration : none"><button  class="btn btn-arrow-right btn-block">{button_text}</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-1">
+            </div>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,275 @@
+h1{
+    display:none;
+}
+
+.row{
+    margin: 0px;
+}
+
+html {
+    overflow: hidden;
+}
+
+.fontfamily {
+    font-family: 'Open Sans';       
+}
+
+#questionnairy_wrapper{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+#questionnairy_content{
+    position:absolute;
+    top:45%;
+    transform:translateY(-42%);
+    width: 100%;
+}
+
+.progress-bar{
+  background-color: #CDDC39 !important;
+}
+
+.progress {
+    position: relative;
+    /* border: 4px solid; */
+    border-radius: 5px;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    height: 15px;
+    margin-bottom:2px;
+}
+
+#progress_column{
+  text-align:center;
+}
+
+#progressbarQuestionCount{
+    color:#405250;
+  font-size:16px;
+  font-weight:600;
+}
+
+#question_placeholder{
+  color:#405250;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+ 
+#answers_row button {
+  padding: 5px;
+  background-color: #CDDC39;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 0px !important;
+  -webkit-box-shadow: 1px 1px 1px #666666;
+  -moz-box-shadow: 1px 1px 1px #666666;
+  box-shadow: 1px 1px 1px #666666;
+  font-family: Courier New;
+  color: #405250;
+  font-size: 20px !important;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  
+  /* no border when selected*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+ 
+#answers_row button:active,
+#answers_row button:hover,
+#answers_row button:focus,
+#answers_row button:target{
+  box-shadow: none !important;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+#bar_row,
+#answers_row,
+#question_row,
+#score_row
+{margin-bottom:5vh;}
+
+#question_row{
+  height:18vh;
+}
+#question_column,
+#question_panel{
+  height:100%;
+}
+
+#question_panel,
+#score_panel{
+    color:#405250;
+    margin-bottom:0px;
+    background-color: #F0F4C3;
+    border: 0px solid;
+    border-radius: 5px;
+    width: 100%; 
+    padding: 5px;
+    white-space: normal !important;
+    word-wrap: break-word;
+    text-align: center;
+}
+#score_text{
+   font-family: "Open Sans";
+    font-size: 20px;;  
+}
+#score{
+  color:#009688;
+}
+
+#question_placeholder{
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 30px;;    
+}
+
+#tableheader_topic,
+#tableheader_Question,
+#topic_placeholder{
+    display:none;
+    
+}
+
+table{
+    background-color: transparent;
+    width: 100%;
+}
+
+footer{
+    border-top: 4px solid;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    line-height: 50px;
+    height: 15vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-arrow-right,
+.btn-arrow-left {
+    
+    color: white;
+    height: 60px;
+    position: relative;
+    padding-top:0px;
+    background-color: #009688;
+    margin-top: 2.5vh;
+    font-family: 'Open Sans';       
+    font-size: 16px;
+    padding-bottom: 0px;
+
+}
+
+i{
+    color:#009688;
+}
+
+.btn-arrow-left:hover,
+.btn-arrow-left:active,
+.btn-arrow-right:hover,
+.btn-arrow-right:active {
+    background-color: #009688;
+    color:#CDDC39;
+}
+
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+.btn-arrow-left:before,
+.btn-arrow-left:after { /* make two squares (before and after), looking similar to the button */
+    content:"";
+    position: absolute;
+    top: 8px; /* move it down because of rounded corners */
+    width: 42px; /* same as height */
+    height: 42px; /* button_outer_height / sqrt(2) */
+    background: #009688; /* use parent background */
+    border: #009688; /* use parent border */
+    z-index: -1; 
+    border-left-color: transparent; /* hide left border */
+    border-bottom-color: transparent; /* hide bottom border */
+    border-radius: 0px 4px 0px 0px; /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+.btn-arrow-right:after {
+    transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+.btn-arrow-left:before{
+    transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+}
+.btn-arrow-left:after,
+.btn-arrow-right:before{ /* align the "after" square to the right */
+    display: none;
+} 
+
+.btn-arrow-left:before { /* align the "before" square to the left */
+    left: -20px;
+}
+.btn-arrow-right:after{ /* align the "after" square to the right */
+    right: -20px;
+}
+
+.col-sm-4{
+    padding: 0px;
+    margin: 0px;
+}
+
+#previous_navbutton{
+  padding-left:55px;
+  padding-top: 7px;
+}
+
+#next_navbutton{
+  padding-right:60px;
+  padding-top: 7px;
+}
+
+
+@media only screen and (orientation: portrait){
+    footer{
+        height: 12vh !important;
+    }
+    
+    #answer_row{
+        text-align:center;
+    }
+    
+    #answers_row button {
+        margin-left:8.5%;
+        margin-bottom:20px;
+        width:79.5vw;
+    }
+    .col-sm-2{
+        width:100%
+    }
+    
+    #previous_navbutton{
+        padding-top: 5px;
+    }
+
+    #next_navbutton{
+        padding-top: 5px;
+    }
+}
+
+

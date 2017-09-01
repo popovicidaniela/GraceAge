@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div id="pageTitle">
+                {new_user}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div class="frame">
+                <div id="scrollbox">
+                    <form name="registerForm" id="registerForm" > 
+
+                        <table class="table table-user-information">
+                            <tbody>
+                                <tr>
+                                    <td class="nocursor">{user_type}</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <select class="form-control" id="usertype" name="usertype">
+                                                <option value="Patient">{patient}</option>
+                                                <option value="Caregiver">{caregiver}</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nocursor">{language}</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <select class="form-control" name="language" id="language">
+                                                <option value="english">English</option>
+                                                <option value="dutch">Nederlands</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nocursor">{gender}</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <select class="form-control" name="gender" id="gender">
+                                                <option value="Female">{female}</option>
+                                                <option value="Male">{male}</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nocursor">{birthdate}</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" name="birthdate" class="form-control" id="birthdate" placeholder="dd/mm/yyyy" required>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nocursor">{username}:</td>
+                                    <td> 
+                                        <div class="form-group">
+                                            <input type="text" name="username" class="form-control" id="username" placeholder="{username_ph}" required>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nocursor">{password}:</td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="password" name="password1" class="form-control" id="password1" placeholder="{password_ph}" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password2" class="form-control" id="password2" placeholder="{confirm_ph}" required>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div id="buttonSubmit">
+                            <input type="button" class="btn btn-default" value="{confirm}" onclick="register()">
+                            <div id="errorbox" class="alert alert-warning inactive"></div>
+                            <div id="snackbar">Some text some message..</div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

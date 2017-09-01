@@ -1,0 +1,151 @@
+html {
+    font-family: "Open Sans";
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+.col-sm-12, .col-sm-10, .col-sm-2 {
+    padding: 0px;
+}
+
+body{
+    background-color: #F0F4C3;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.navbar, .dropdown{
+    background-color: white !important;
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.navbar-nav li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: "Open Sans";
+    font-weight: bold !important;
+    color: #212121 !important;
+}
+
+.dropdown-toggle{
+    font-weight: normal !important;
+}
+
+.dropdown{
+    color: #212121 !important;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: "Open Sans";
+    font-weight: bold !important;
+}
+
+.dropdown li{
+    display: block;
+    padding: 12px 15px;
+}
+
+.dropdown-menu{
+    right: 0; left: auto;   /*open dropdown left */
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+    .dropdown-menu li{
+        padding: 0px;
+        height: auto;
+        
+    }
+
+ul.navbar-nav li:hover a,
+ul.dropdown li:hover{
+    text-decoration: underline !important;
+}
+
+/* active tab in background color*/
+ul.navbar-nav li a.active,
+dropdown-toggle a,
+li.active{
+    display: block;
+    background-color: #F0F4C3 !important;
+    color: #212121;
+    text-decoration: none !important;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* active tab in dropdown: settings */
+ul.dropdown li a.active{
+    background-color: #F0F4C3;
+}
+
+.fa{
+    color: #009688;
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover { 
+    background-color: #CDDC39;
+    border: none;
+    float: left;
+    margin-left: 30px;
+}
+
+#logouttab{
+    margin-right: 20px;
+    display: none;
+}
+
+/* settings tab not visible in navbar on desktop screen */
+#settingsMobile{
+    display: none;
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px){
+    ul.navbar-nav li a{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    
+    #logouttab{
+        margin-right: 20px;
+        display: block;
+        font-size: 13px;
+    }
+    
+    #settingsMobile{
+        display: block;
+    }
+    
+    fa-sign-out{
+        color: #CDDC39 !important;
+    }
+    
+    .dropdown{
+        display: none;
+    }
+    
+    /* only the important functions/tabs */
+    #newuserTab, #tipsTab, #settingsMobile{ /*tips, new user & settings */
+        display: none;
+    }
+    
+    
+}
+
+

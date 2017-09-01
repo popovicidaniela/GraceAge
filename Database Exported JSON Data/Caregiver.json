@@ -1,0 +1,93 @@
+[
+	{
+		"idCaregiver" : 0,
+		"Name" : "Rianna Fuentes",
+		"password" : "$2y$10$WOtKVMqKvddr4xXhe2SUfu8OMD93dwHvwoBnRbT.jgjed0yikCdXW",
+		"Language" : "dutch",
+		"isAdmin" : 0,
+		"Birthday" : "01/24/1984",
+		"Gender" : "Female",
+		"Email" : "rianna.fuentes@remy.be",
+		"Landline" : "032-4560-834",
+		"Mobile" : "0484-231-597",
+		"HomeAddress" : "Leuven, Belgium"
+	},
+	{
+		"idCaregiver" : 4,
+		"Name" : "Macey Sims",
+		"password" : "$2y$10$0yBVD5A7G.NOvFYmx9roGux3R17TdtSOjv4IfkTqZ4Q.vD4C6S.n2",
+		"Language" : "english",
+		"isAdmin" : 1,
+		"Birthday" : "04/22/1980",
+		"Gender" : "Female",
+		"Email" : "macey.sims@remy.be",
+		"Landline" : "032-6722-920",
+		"Mobile" : "0487-423-422",
+		"HomeAddress" : "Leuven, Belgium"
+	},
+	{
+		"idCaregiver" : 5,
+		"Name" : "Finn Miller",
+		"password" : "$2y$10$SH3vb7V.ardc71MQ6HO3oOh1jKUbdx2MOYFHkLEnIUMXRHVi91W2C",
+		"Language" : "dutch",
+		"isAdmin" : 0,
+		"Birthday" : "10/19/1977",
+		"Gender" : "Male",
+		"Email" : "finn.miler@remy.be",
+		"Landline" : "032-4554-890",
+		"Mobile" : "0487-878-529",
+		"HomeAddress" : "Hevelee, Belgium"
+	},
+	{
+		"idCaregiver" : 6,
+		"Name" : "Johnathon Horton",
+		"password" : "$2y$10$5J8SPRFNfRlVxp.166.ov.bmJSLspTBRGlcWubohc5cevj1B5JDCS",
+		"Language" : "dutch",
+		"isAdmin" : 0,
+		"Birthday" : "02/23/1987",
+		"Gender" : "Male",
+		"Email" : "johnathon.horton@remy.be",
+		"Landline" : "032-3324-920",
+		"Mobile" : "0489-290-483",
+		"HomeAddress" : "Brusells, Belgium"
+	},
+	{
+		"idCaregiver" : 7,
+		"Name" : "Kamari Dickerson",
+		"password" : "$2y$10$VgC5q/nGgd8y7kH35PHRVuw.5U0hdxM.ZthjMm21kxpoz1iAevs46",
+		"Language" : "dutch",
+		"isAdmin" : 0,
+		"Birthday" : "08/10/1979",
+		"Gender" : "Female",
+		"Email" : "kamari.dickerson@remy.be",
+		"Landline" : "032-4728-453",
+		"Mobile" : "0487-223-748",
+		"HomeAddress" : "Antwerp, Belgium"
+	},
+	{
+		"idCaregiver" : 9,
+		"Name" : "Audrey Dawson",
+		"password" : "$2y$10$xYvBvaWhpFfKsx8Cdr4mZOPkdob/GQbHNwVTmSxcHsf4A9EUtp9f2",
+		"Language" : "dutch",
+		"isAdmin" : 0,
+		"Birthday" : "11/09/1982",
+		"Gender" : "Female",
+		"Email" : "audrey.dawson@remy.be",
+		"Landline" : "032-5662-298",
+		"Mobile" : "0484-420-220",
+		"HomeAddress" : "Hevelee, Belgium"
+	},
+	{
+		"idCaregiver" : 10,
+		"Name" : "admin",
+		"password" : "$2y$10$0PZPf9VvsXqJdslDBAybNeKq2q5mA0IUH0gEer8TuSOG2c2lQYSHC",
+		"Language" : "dutch",
+		"isAdmin" : 1,
+		"Birthday" : "01/01/1834",
+		"Gender" : "Unisex",
+		"Email" : "TheRealAdmin@2morrow.com",
+		"Landline" : "032-5767-675",
+		"Mobile" : "0498-234-234",
+		"HomeAddress" : "Leuven, Belgium"
+	}
+]

@@ -1,0 +1,233 @@
+html {
+    overflow: hidden; /*static page*/
+    font-family: "Open Sans";
+}
+
+#rightcontent, #leftcontent {
+    margin-top: 3vh;
+    height: 85vh;
+    position: relative;
+}
+
+#rightcontent_bottom{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#rightcontent_top{
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pageTitle{
+    overflow: hidden; 
+    padding: 5px;
+    background-color: #CDDC39;
+    width: 100%;  
+    font-family: "Open Sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    border-top-left-radius: 4px; border-top-right-radius: 4px;
+    cursor: default;
+}
+
+.frame{
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    background-color: white;
+    height: 100%;
+}
+
+.smallbox{
+    width: 100%;
+
+    /* frame */
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    background-color: white;    
+}
+
+#scrollbox{
+    overflow-style: auto;
+    overflow-y: scroll;
+    height: 35vh;   
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+}
+
+/* chart */
+#chart_div{
+    height: 80vh;
+    padding: 8px;
+}
+
+/* messages */
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+    color: #777777;
+}
+
+.panel {
+    border: none;
+    margin-bottom: 0px;
+    height: 33.25vh; /* same as scrollbox in top */
+}
+
+.panel-body {
+    overflow-style: auto;
+    overflow-y: scroll;
+    height: 80%;
+    cursor: default;
+}
+
+.panel-footer {
+    background-color: transparent;
+    width: 100%;
+    padding-right: 27px;
+    margin-bottom: 2px;
+    height: 19%;
+}
+
+#btn-chat{
+    margin: 0px;
+    background-color: #CDDC39;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold; 
+    padding-left: 5px !important; padding-right: 5px ! important; 
+    float: right;
+    vertical-align: middle;
+    height: 34px;
+}
+
+input[type=text] {
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+/* urgent patients */
+hr{
+    margin-top: 1px; margin-bottom: 1px;
+}
+
+#borderpatient_left{
+    padding-top: 5px;
+    padding-left: 16px;
+}
+
+#borderpatient_left>hr{ 
+    width: 130%; /* no white space in horizontal line */
+}
+
+/* my wrapper is used to align the text in the middle of the icon */
+.my-wrapper{
+    display: inline-block;
+    height: 30px;
+}
+
+.my-wrapper .fa-user-o{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#borderpatient_right{
+    padding-top: 5px;
+    padding-right: 16px;
+    float: right;
+}
+    
+#borderpatient_right a:hover{
+    cursor: default;
+    color: inherit;
+    text-decoration: none;    
+}
+
+table{
+    width: 100%;
+}
+
+table p{
+    vertical-align: middle;
+}
+
+/* mobile version with navbar collapse*/
+@media only screen and (max-width: 767px){
+
+    #leftcontent{
+        margin-top: 0px;
+    }
+
+    html{
+        overflow: auto; /* scroll is possible */
+    }
+    
+    /* show only the necessary functions */
+      
+    #rightcontent {
+        height: 50vh;
+        margin-bottom: 10px;
+    }
+    
+    #rightcontent_bottom{ /* messages box */
+        display: none;
+    }
+    
+    #scrollbox {    /* scroll in patients box */
+        overflow-style: auto;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    
+    .smallbox{
+        margin-bottom: 3px;
+    }
+    
+    .row{
+        overflow-x: hidden;
+    }
+}
+
+

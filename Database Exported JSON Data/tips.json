@@ -1,0 +1,110 @@
+[
+	{
+		"idtips" : 54,
+		"topic" : "Privacy",
+		"english" : "Mention whenever your privacy is not respected and ask for it to be respected immediately.",
+		"dutch" : "Zeg het wanneer je privacy niet gerespecteerd word"
+	},
+	{
+		"idtips" : 55,
+		"topic" : "Food",
+		"english" : "Go to the cafeteria whenever you feel hungry and ask for snacks.",
+		"dutch" : "Ga naar de cafetaria als je honger hebt en haal een snack"
+	},
+	{
+		"idtips" : 56,
+		"topic" : "Food",
+		"english" : "Ask someone at the cafeteria to heat your meal whenever it is not warm enough.",
+		"dutch" : "Vraag iemand om je eten op te warmen als het niet heet genoeg is"
+	},
+	{
+		"idtips" : 57,
+		"topic" : "Food",
+		"english" : "Suggest your favorite meals at the reception and cafeteria.",
+		"dutch" : "Vraag je favoriete gerecht aan bij de receptie en de cafetaria"
+	},
+	{
+		"idtips" : 58,
+		"topic" : "Safety",
+		"english" : "Call the caregiver or other staff whenever you feel that your safety is threatened.",
+		"dutch" : "Roep een verpleegster wanneer je je onveilig voelt"
+	},
+	{
+		"idtips" : 59,
+		"topic" : "Safety",
+		"english" : "Make sure that your possessions are safe before leaving them.",
+		"dutch" : "Zorg ervoor dat uw bezittingen veilig zijn opgeborgen."
+	},
+	{
+		"idtips" : 60,
+		"topic" : "Comfort",
+		"english" : "Provide feedback at the reception about what things should be improved at the care facility.",
+		"dutch" : "Geef feedback aan de receptie over wat er beter kan in het tehuis"
+	},
+	{
+		"idtips" : 61,
+		"topic" : "Comfort",
+		"english" : "Plan more \"going outdoors\" time with your caregiver.",
+		"dutch" : "plan meer uitstapjes met je verpleger"
+	},
+	{
+		"idtips" : 62,
+		"topic" : "Comfort",
+		"english" : "Ask to be transferred in a more quiet place whenever you feel disturbed by the noise.",
+		"dutch" : "Vraag om naar een rustigere plaats gebracht te worden wanner er teveel rumoer is"
+	},
+	{
+		"idtips" : 63,
+		"topic" : "Autonomy",
+		"english" : "Make your own schedules, but make sure to notify your caregiver and not to disturb others.",
+		"dutch" : "Maak je eigen uurrooster, maar zorg dat je de verplegers verwittigd"
+	},
+	{
+		"idtips" : 65,
+		"topic" : "StaffResponse",
+		"english" : "Tell your caregiver to offer you more quality attention.",
+		"dutch" : "Vertel de verpleegkundige dat je meer aandacht nodig hebt"
+	},
+	{
+		"idtips" : 66,
+		"topic" : "StaffResponse",
+		"english" : "Tell your caregiver how to serve you better.",
+		"dutch" : "Vertel de verpleegkundige hoe je beter geholpen kunt worden"
+	},
+	{
+		"idtips" : 67,
+		"topic" : "StaffBonding",
+		"english" : "Share your reflections with your caregiver.",
+		"dutch" : "Deel je ideeen met de verplegers"
+	},
+	{
+		"idtips" : 68,
+		"topic" : "StaffBonding",
+		"english" : "Be less demanding and more friendly.",
+		"dutch" : "Wees minder veel eisend en vriendelijker"
+	},
+	{
+		"idtips" : 69,
+		"topic" : "Activities",
+		"english" : "Suggest your favorite activities to be included in the schedule.",
+		"dutch" : "Vraag om je favoriete actieviteiten in het schema te zetten"
+	},
+	{
+		"idtips" : 72,
+		"topic" : "Respect",
+		"english" : "Report at the reception or other relevant staff whenever someone disrespects you.",
+		"dutch" : "Zeg het wanner je je niet gerespecteerd voelt"
+	},
+	{
+		"idtips" : 73,
+		"topic" : "Respect",
+		"english" : "Don't hesitate to express your opinions.",
+		"dutch" : "Twijfel niet om je mening te geven."
+	},
+	{
+		"idtips" : 74,
+		"topic" : "Relationships",
+		"english" : "Communicate more with other people in the care facility.",
+		"dutch" : "Communiceer meer met de andere mensen in het tehuis."
+	}
+]

@@ -1,0 +1,208 @@
+.html {
+    overflow: hidden; /*static page*/
+    font-family: "Open Sans";
+}
+
+#mobileversion{
+    display: none;
+}
+
+body{
+    font-family: "Open Sans";
+}
+
+/*search a patient*/
+#personal-datatable_filter label{
+    float: left;
+}
+
+.btn.inactive{
+    display: none;
+}
+
+#newuserButton{
+    float: right;
+    background: transparent;
+    padding: 0px;
+}
+
+.dataTables_length label{
+    margin-left: 6px;
+    display: none;
+}
+
+#pageTitle{  
+    margin-top: 3%;
+    padding: 0;
+    overflow: hidden;
+    padding: 8px;
+    background-color: #CDDC39;
+    width: 100%;  
+    font-family: "Open Sans";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: #212121;
+    border-top-left-radius: 4px; border-top-right-radius: 4px;
+    cursor: default;
+}
+
+.frame{
+    border-style: solid;
+    border-color: #CDDC39;
+    border-radius: 0px;
+    border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;
+    background-color: white;
+    height: 100%;
+}
+
+#scrollbox{
+    overflow-style: auto;
+    overflow-y: scroll;
+    height: 80vh;
+    padding-left: 5vw; padding-right: 5vw;
+    padding-bottom: 3%; padding-top: 3%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+}
+
+tbody{
+    cursor: pointer;
+}
+
+.progress{
+    margin-bottom: 0px;
+}
+
+.progress-bar{
+    background-color: #009688;
+}
+
+/* edit: text no button */
+.editbutton{
+    border: none;
+    background-color: transparent;
+    color: #212121;
+    text-transform: lowercase;
+    padding: 0px;
+    cursor: pointer !important;
+    padding-left: 10px;
+}
+
+/*update button*/
+.editform input[type=button]{
+    margin: 2px;
+    height: 16px;
+    background-color: #CDDC39;
+    border: 1px solid #CDDC39;
+    border-radius: 4px;    
+    text-transform: lowercase;
+    padding-bottom: 6px;
+    font-family: "Open Sans";
+    color: #212121;
+}
+
+
+.col-sm-6>p{
+    margin: 0px;
+    padding:0px;
+}
+
+/*style buttons: next, last, ... */
+.pagination>li>a{
+    margin: 2px;
+    height: 34px;
+    background-color: #CDDC39;
+    border: 1px solid #CDDC39;
+    border-radius: 4px;    
+    text-transform: uppercase;
+    font-weight: bold; 
+    padding: 6px 12px;
+    font-family: "Open Sans";
+    color: #212121;
+}
+
+.pagination>li>a:hover,
+.pagination>li>a:active{
+    text-decoration: underline;
+    background-color: #CDDC39;
+    border: 1px solid #CDDC39;
+    border-radius: 4px; 
+    color: #212121;
+}
+
+/* only show useful buttons */
+.pagination>.disabled>a{
+    display: none;
+}
+
+/* text info entries */
+#personal-datatable_info{
+    font-size: 11px;
+    color: lightgray;
+}
+
+
+/* mobile version with navbar collapse*/
+@media only screen and (max-width: 767px){
+
+    #pageTitle{
+        margin-top: 0px;
+    }
+    
+    html{
+        overflow: auto; /* scroll is possible */
+    }
+    
+    #mobileversion{
+        display: block;
+    }
+    
+    #scrollbox{
+        display: none;
+    }
+    
+    #mobileversion>.row{
+        margin: 0;
+    }
+    
+    .table-responsive{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        font-size: 11px;
+    }
+    
+    /* column sizes in table */
+    
+    td.col-sm-3, td.col-sm-4,
+    th.col-sm-3, th.col-sm-4{
+        padding-left: 0px !important;
+    }
+    
+    td.col-sm-5, td.col-sm-4,
+    th.col-sm-5, th.col-sm-4{
+        padding-right: 0px !important;
+    }
+    
+}
+
+/* pop up window */
+#modalSubtitle{
+    font-size: 13px;
+    color: grey;
+    padding-bottom: 6px;
+}
+

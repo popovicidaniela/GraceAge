@@ -1,0 +1,164 @@
+html{
+    overflow: hidden;
+}
+
+.col-sm-12{
+    padding: 0px;
+}
+
+.navbar-collapse{
+    border-bottom: 4px solid;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    height: 15vh !important;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-fixed-bottom{
+    border-top: 4px solid;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    height: 15vh !important;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-collapse .btn-primary,
+.navbar-fixed-bottom .btn-primary{
+    background-color: #F0F4C3;
+    border-width: 0px;
+    color:#405250;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar_icons{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/* make 3 buttons visible with 2 vertical lines */
+.btn.btn-primary.tipsButtonBorder{
+    border-width: 0px;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-color: #CDDC39;
+}
+
+.btn-primary{
+    white-space: normal !important;
+    word-wrap: break-word;
+    padding: 0px;
+}
+
+.btn-group-justified{
+    height: 71vh !important;
+    position: absolute;
+    overflow: hidden;
+}
+
+.btn-group-vertical{
+    display: none;
+}
+
+/* style all the buttons in the middle*/
+.btn-group>.btn{
+    border: 0px;
+    background-color: white;
+    color:#405250;
+    font-size: 28px;
+}
+    
+    /* style icons in the button*/
+    .btn>.fa{
+        color: #009688;
+    }
+
+    .btn-group>.btn:hover, 
+    .btn-group>.btn:focus, 
+    .btn-group>.btn:active{
+        background-color: #CDDC39;
+        color: black;
+    }   
+
+.fontfamily {
+    font-family: 'Open Sans';       
+}
+
+@media only screen and (orientation: portrait){
+    .btn-group-vertical {
+        display: block;
+        width: 100% !important;
+        height: 80vh !important;
+        position: absolute !important;
+    }
+    
+    .btn-group-vertical .btn-primary{
+        height: 32% !important; /* each 1/3 of the screen */
+    }
+    
+    .btn-group-justified {
+        display: none;
+    }  
+    
+    .fontfamily{
+        font-size: 30px;
+    }
+    
+    /* make 3 buttons visible with 2 horizontal lines */
+    .btn.btn-primary.tipsButtonBorder{
+        border-width: 0px;
+        border-top: 4px solid;
+        border-bottom: 4px solid;
+        border-color: #CDDC39;
+    }
+    
+    #verticalcentertext{
+        vertical-align: 20%;
+    }
+    
+    .btn-group-vertical{        
+        position: relative;
+    }
+    
+    .btn-group-vertical i{
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    } 
+    
+    .btn-group-vertical p{
+        position: absolute;
+        top: 44%;
+        left: 43%;
+    }
+    
+    .navbar-collapse, .navbar-fixed-bottom{
+        height: 12vh !important;
+        background-color: #F0F4C3;
+    }
+    
+    .navbar-fixed-bottom i{
+        padding-top: 0px;
+    }
+
+    .navbar_icons{
+    position: absolute;
+    top:50%;
+    width:100%;
+    transform: translateY(-50%);
+    }
+    
+    .fa-lightbulb-o{
+        margin-left: 17px; /*center with other icons*/
+    }
+}
+
+.row{ 
+    margin: 0px;
+}
+

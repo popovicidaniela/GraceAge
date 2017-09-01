@@ -1,0 +1,137 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div id="pageTitle">
+                {personal_patients}
+            </div>
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col-sm-offset-1 col-sm-10">
+            <div class="frame">
+                <!-- desktop / tablet version -->
+                <div id="scrollbox"> 
+                    <div class ="row">
+                        <div class="col-sm-12">  
+                            <div class="table-responsive">
+                                <a id="newuserButton" class="btn inactive" href="register">
+                                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <table id="personal-datatable" class="table table-hover">
+                                    <thead>
+                                        <tr class="row">
+                                            {table_titles}
+                                            <th class="{gridClass}">{text}</th>
+                                            {/table_titles}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {table}
+                                        <tr class="clickable row" title="Click to show more information about the patient">
+                                            <td class="col-sm-3" data-toggle="modal" data-target=".modChart"
+                                                onclick="setID({id});
+                                                                setBarChartTitle('{Name}:', '{Extra}<?php echo $this->lang->line('gender'); ?> {Gender} </br> <?php echo $this->lang->line('room_number'); ?>: {Roomnumber} </br> <?php echo $this->lang->line('date_of_birth'); ?> {Bday}{/Extra} </br>');
+                                                        drawChart();">
+                                                {Name}
+                                            </td>
+                                            <td class="col-sm-2" data-toggle="modal" data-target=".modChart"
+                                                onclick="setID({id});
+                                                                setBarChartTitle('{Name}:', '{Extra}<?php echo $this->lang->line('gender'); ?> {Gender} </br> <?php echo $this->lang->line('room_number'); ?>: {Roomnumber} </br> <?php echo $this->lang->line('date_of_birth'); ?> {Bday}{/Extra} </br>');
+                                                        drawChart();">{Last}</td>
+                                            <td class="col-sm-1" data-toggle="modal" data-target=".modChart"
+                                                onclick="setID({id});
+                                                                setBarChartTitle('{Name}:', '{Extra}<?php echo $this->lang->line('gender'); ?> {Gender} </br> <?php echo $this->lang->line('room_number'); ?>: {Roomnumber} </br> <?php echo $this->lang->line('date_of_birth'); ?> {Bday}{/Extra} </br>');
+                                                        drawChart();">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-{Bar} " 
+                                                         role="progressbar" aria-valuenow="10" aria-valuemin="0" 
+                                                         aria-valuemax="100" style="width: {Score}%">
+                                                        {Score} %
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-6">
+                                                <p id="text{id}">{Note} 
+                                                    <!-- icon and text together -->
+                                                        <span style="white-space: nowrap" class="editbutton" id="button{id}" onclick="editNote({id})">
+                                                            <i class="fa fa-pencil" > </i>
+                                                            <?php echo $this->lang->line('edit'); ?>
+                                                        </span>
+                                                </p>
+
+                                                <form class='editform' id="form{id}" hidden >
+                                                    <input type='text' id="{id}s" value="{Note}" size="40">
+                                                    <input type='button' onclick='update_note({id})' value='update'>
+                                                    <div id="{id}sss"></div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    {/table}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- pop up -->
+                        <div class="modChart modal fade" role="dialog" tabindex="-1" 
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" style="width: 900px; height: 550px;">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span> <span class="sr-only"></span>
+                                        </button>
+                                        <h4 class="modal-title" id="exampleModalLabel">Bar Chart</h4>
+                                        <h6 id="modalSubtitle">Koekjeeeeuhsssss!</h6>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="canvas" style="width: 900px; height: 450px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end desktop/ tablet version -->
+
+                <!-- mobile version -->
+                <div id="mobileversion">                  
+
+                    <div class ="row">
+                        <div class="col-sm-12">  
+                            <div class="table-responsive">
+                                <table class="table table-hover"> <!--id="personal-datatable"--> 
+                                    <thead>
+                                        <tr class="row">
+                                            {table_titles_mobile}
+                                            <th class="{gridClass}">{text}</th>
+                                            {/table_titles_mobile}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {table}
+                                        <tr class="row" >
+                                            <td class="col-sm-5">{Name}</td>
+                                            <td class="col-sm-4">{Last}</td>
+                                            <td class="col-sm-3">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-{Bar} " 
+                                                         role="progressbar" aria-valuenow="10" aria-valuemin="0" 
+                                                         aria-valuemax="100" style="width: {Score}%">
+                                                        {Score} %
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        {/table}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end mobile version -->
+            </div>
+        </div>
+    </div>
+</div>

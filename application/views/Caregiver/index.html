@@ -1,0 +1,118 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-offset-1 col-sm-10">
+
+            <div class="col-sm-6 pull-sm-6">
+                <div id="leftcontent" >
+                    <!-- chart: title + content -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="pageTitle">
+                                {chart_title}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="frame">
+                                <div id="chart_div">
+                                    <!-- chart content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-offset-1 col-sm-5 push-sm-5">
+                <div id ="rightcontent">
+                    <div id="rightcontent_top" >
+                        <!-- urgent patients: title + content -->
+                        
+                        <div class="row">
+                            <div class="pageTitle">
+                                {urgent_patient_title}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="smallbox">
+                                <div id="scrollbox">
+                                    <table>
+                                        <tr>
+                                            <td id="borderpatient_left">
+                                                {urgent}
+                                                <div class="my-wrapper">
+                                                    <span class="fa fa-user-o" aria-hidden="true"></span>
+                                                    <a href="<?php echo base_url();?>CaregiverController/personal?username={Name_url}">{Name}</a>
+                                                </div>
+                                                <hr>
+                                                {/urgent}
+
+                                            </td>
+                                            <td id="borderpatient_right">
+                                                {urgent} 
+                                                <div class="my-wrapper">
+                                                    <a>{Score}%</a>                                                
+                                                </div>
+                                                <hr>
+                                                {/urgent}
+                                            </td> 
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                       
+
+
+                    <div id="rightcontent_bottom">
+                        <!--messages: title + content-->
+                        
+                        <div class="row">
+                            <div class="pageTitle">
+                                {messages_title}
+                            </div>
+                        </div>
+    
+                        <div class="row">  
+                            <div class="smallbox">
+                                <div class="panel panel-primary">
+                                    <div id="message_scrollbox" class="panel-body">
+                                        <ul id="msgbox1" class="chat list-group">
+                                            {show}
+                                            <li class="list-group-item">
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <b>{Name}</b> 
+                                                        <small class="pull-right text-muted"> {Date} </small>
+                                                    </div>
+                                                    <p> {Message} </p>
+                                                </div>
+                                            </li>  
+                                            {/show} 
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <form  name="messagesend" id="messagesend" action="index" method="get">
+                                            <div class="input-group">
+                                                <input name="messagesend" id="btn-input" type="text" class="form-control input-sm" placeholder="{input_text_placeholder}" />
+                                                <span class="input-group-btn">
+                                                    <button name="Send" type="button" class="btn btn-sm" id="btn-chat" onclick='send_msg()'>{send_button_text}</button>
+                                                </span>
+    
+                                            </div>
+                                            <div id='updatebox'></div>
+                                        </form>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

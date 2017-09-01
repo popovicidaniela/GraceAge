@@ -1,0 +1,104 @@
+.container-fluid {
+    padding: 0px !important;
+}
+
+#Tips_button,
+#Questionnaire_button{
+    display: none;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+
+
+#navbar_icons,
+#Help_icon{
+    padding: 0px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#Help_button{
+   
+       text-align: center;
+
+}
+
+#entireNavbar{
+    border-bottom: 4px solid;
+    border-color: #CDDC39;
+    background-color: #F0F4C3;
+    height: 15vh !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (orientation: portrait){
+    #entireNavbar{
+        height: 12vh !important;
+    }
+}
+
+
+.col-sm-8{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+#helpText{
+    padding-right:35px;
+    padding-left:35px;
+    width: 100%;
+    font-size: 17px;
+   font-weight: bold;
+   color: #405250;
+   font-family: 'Open Sans';    
+}
+
+.navbar-nav>li{
+   text-align: center;
+}
+
+.col-sm-11{
+    text-align: center;
+    align-items: center;
+
+}
+
+
+a > span
+{
+   font-size: 15px;
+   font-weight: bold;
+   color: #405250;
+   font-family: 'Open Sans';       
+}
+
+#Help_button>a>.fa{
+    font-size: 40px;
+   font-weight: bold;
+   color: #009688;
+}
+
+a,
+a:hover{
+     text-decoration: none;
+}
+
+.navbar-nav > li > a > i
+{
+   font-size: 40px;
+   font-weight: bold;
+   color: #009688;
+}
+
+
+.col-lg-12{
+    padding: 0px;
+}
+
+
